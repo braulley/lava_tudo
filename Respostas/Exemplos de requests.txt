@@ -1,0 +1,49 @@
+Exemplos:
+Cadastrar Cliente
+{
+  "nome": "sample string 2",
+  "email": "sample string 3",
+  "DataNasc": "2017-01-05T23:02:09.6702903-02:00",
+  "celular": "sample string 5",
+  "residencial": "sample string 6"
+}
+
+Cadstrar OS
+{
+  "Codigo": 1,
+  "cliente": {
+    "Codigo": 1
+  },
+  "dataContratacao": "2017-01-05T23:01:43.5460537-02:00",
+  "dataExecucao": "2017-01-05T23:01:43.5460537-02:00"
+}
+
+Cadastrar Servico
+{
+  "nomeservico": "sample string 2",
+  "valorfinal": 3.1,
+  "custoEmpresa": 4.1,
+  "endereco": {
+    "Codigo": 1,
+    "logradouro": "sample string 2",
+    "numero": 3,
+    "complemento": "sample string 4",
+    "bairro": "sample string 5",
+    "cidade": "sample string 6",
+    "uf": "sample string 7",
+    "cep": "sample string 8"
+  },
+  "os": {
+    "Codigo": 1
+    },
+    "dataContratacao": "2017-01-05T23:02:38.4227202-02:00",
+    "dataExecucao": "2017-01-05T23:02:38.4227202-02:00"
+  }
+}
+
+GET por IDOS
+
+localhost:porta/api/os/ConsultarPorCodigo/{idOs}
+
+Get por IDCliente
+localhost:portaapi/cliente/ConsultarOsPorCliente/{idCliente}
